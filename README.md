@@ -8,7 +8,7 @@ Run `ng serve`. Navigate to `http://localhost:4200/`. The application will autom
 
 ## Run Back-end server
 
-Run `npm run server`. the back-end server will run on port `5000`, you can access to it by `http://localhost:5000/` and the related resource url is `http://localhost:5000/employees` it supports all http: GET POST PUT PATCH DELETE OPTIONS.
+Run `npm run server`. the JSON-Server server will run on port `5000` that has configured in the package.json, you can access to it by `http://localhost:5000/` and the related resource url is `http://localhost:5000/employees` it supports all http: GET POST PUT PATCH DELETE OPTIONS.
 
 ## Database
 
