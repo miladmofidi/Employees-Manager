@@ -1,0 +1,57 @@
+{
+  "employees": [
+    {
+      "email": "john.doe@gmail.com",
+      "employeeCode": "645267861b1b4808ac045a99",
+      "id": "1",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar1.png",
+      "jobTitle": "SQL",
+      "name": "John Clarckson",
+      "phone": "9132584141"
+    },
+    {
+      "email": "peter.check@gmail.com",
+      "employeeCode": "786267861b1b4808ac045a21",
+      "id": "2",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar2.png",
+      "jobTitle": "MongoDB",
+      "name": "Peter Check",
+      "phone": "9122584141"
+    },
+    {
+      "email": "sonia.larck@gmail.com",
+      "employeeCode": "423267861b1b4808ac045a31",
+      "id": "3",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "jobTitle": "Java",
+      "name": "Sonia Larck",
+      "phone": "9112584141"
+    },
+    {
+      "email": "larry.johnson@gmail.com",
+      "employeeCode": "132267861b1b4808ac045a78",
+      "id": "4",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar4.png",
+      "jobTitle": "Data",
+      "name": "Larry Johnson",
+      "phone": "9102584141"
+    },
+    {
+      "name": "Siri Milikovic",
+      "email": "jh@google.com",
+      "jobTitle": "DEVOPS",
+      "phone": "5424234",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar5.png",
+      "id": "ogV3iL1"
+    },
+    {
+      "name": "Manuel Thomas",
+      "id": "7ulo9Mf",
+      "userCode": "",
+      "email": "abc@google.com",
+      "jobTitle": "UI/UX",
+      "phone": "9856321478",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar6.png"
+    }
+  ]
+}
