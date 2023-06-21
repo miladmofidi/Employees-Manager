@@ -1,6 +1,9 @@
 # Employees-Manager
 
-Simple employees manager application using Angular UI and JSON server as Back-end
+Simple employees manager application using Angular UI and JSON server as Back-end with all CRUD features.
+
+## Screenshot
+![image](https://github.com/miladmofidi/Employees-Manager/assets/5041309/a5ee3c27-2c41-4271-a7db-b3e46e9446ab)
 
 ## Run Application
 
@@ -17,7 +20,4 @@ The database will be read/written in the `db.json` file located in the project r
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Screenshot
-![image](https://github.com/miladmofidi/Employees-Manager/assets/5041309/a5ee3c27-2c41-4271-a7db-b3e46e9446ab)
 
