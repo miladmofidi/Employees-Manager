@@ -24,6 +24,30 @@ export class AppComponent implements OnInit{
         this.getEmployees();
     }
 
+  //generic open modal handler to open different modal just by passing its mode
+    public onOpenModal(employee: Employee | null, mode?: string): void {
+    const container = document.getElementById('main-container');
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.style.display = 'none';
+    button.setAttribute('data-toggle', 'modal');
+    if (mode === 'add') {
+      button.setAttribute('data-target', '#addEmployeeModal');
+    }
+    if (mode === 'edit') {
+      this.editEmployee = employee;
+      button.setAttribute('data-target', '#updateEmployeeModal');
+    }
+    if (mode === 'delete') {
+      this.deleteEmployee = employee;
+      button.setAttribute('data-target', '#deleteEmployeeModal');
+    }
+    //After we have created and set the button to related modal, it should be added into DOM and called with click even.
+    // @ts-ignore
+    container.appendChild(button);
+    button.click();
+  }
+
   public getEmployees(): void {
     this.employeeService.getEmployees().subscribe(
       (response: Employee[]) => {
@@ -42,6 +66,7 @@ export class AppComponent implements OnInit{
       (response: Employee) => {
         console.log(response);
         this.getEmployees();
+        //reset the form before ending up to prevent to remained
         addForm.reset();
       },
       (erro: HttpErrorResponse) => {
@@ -79,27 +104,7 @@ export class AppComponent implements OnInit{
     );
   }
 
-  public onOpenModal(employee: Employee | null, mode?: string): void {
-    const container = document.getElementById('main-container');
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.style.display = 'none';
-    button.setAttribute('data-toggle', 'modal');
-    if (mode === 'add') {
-      button.setAttribute('data-target', '#addEmployeeModal');
-    }
-    if (mode === 'edit') {
-      this.editEmployee = employee;
-      button.setAttribute('data-target', '#updateEmployeeModal');
-    }
-    if (mode === 'delete') {
-      this.deleteEmployee = employee;
-      button.setAttribute('data-target', '#deleteEmployeeModal');
-    }
-    // @ts-ignore
-    container.appendChild(button);
-    button.click();
-  }
+
 
   public searchEmployees(key: string): void {
     console.log(key);
