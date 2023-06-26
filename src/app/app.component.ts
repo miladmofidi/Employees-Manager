@@ -35,7 +35,7 @@ export class AppComponent implements OnInit{
     );
   }
 
-  public onAddEmloyee(addForm: NgForm): void{
+  public onAddEmployee(addForm: NgForm): void{
     // @ts-ignore
     document.getElementById('add-employee-form').click();
     this.employeeService.addEmployee(addForm.value).subscribe(
@@ -50,10 +50,11 @@ export class AppComponent implements OnInit{
     );
   }
 
-  public onUpdateEmloyee(employee: Employee): void{
+  public onUpdateEmployee(employee: Employee): void{
     // @ts-ignore
     document.getElementById('add-employee-form').click();
-    this.employeeService.updateEmployee(employee).subscribe(
+    this.editEmployee = employee;
+    this.employeeService.updateEmployee(this.editEmployee).subscribe(
       (response: Employee) => {
         console.log(response);
         this.getEmployees();

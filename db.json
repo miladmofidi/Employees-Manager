@@ -1,22 +1,22 @@
 {
   "employees": [
     {
-      "email": "john.doe@gmail.com",
-      "employeeCode": "645267861b1b4808ac045a99",
-      "id": "1",
-      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar1.png",
-      "jobTitle": "SQL",
       "name": "John Clarckson",
-      "phone": "9132584141"
+      "id": "1",
+      "userCode": "",
+      "email": "john.doe@gmail.com",
+      "jobTitle": "SQL",
+      "phone": "9132584141",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar1.png"
     },
     {
-      "email": "peter.check@gmail.com",
-      "employeeCode": "786267861b1b4808ac045a21",
-      "id": "2",
-      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar2.png",
-      "jobTitle": "MongoDB",
       "name": "Peter Check",
-      "phone": "9122584141"
+      "id": "2",
+      "userCode": "",
+      "email": "peter.check@gmail.com",
+      "jobTitle": "MongoDB",
+      "phone": "9122584141",
+      "imageUrl": "https://bootdey.com/img/Content/avatar/avatar2.png"
     },
     {
       "email": "sonia.larck@gmail.com",
